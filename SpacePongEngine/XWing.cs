@@ -8,6 +8,7 @@ namespace SpacePongEngine
 {
     public class XWing : SpaceObject
     {
+
         public XWing()
         {
             X = rng.Next(3, WorldWidth - 2);
@@ -27,6 +28,13 @@ namespace SpacePongEngine
         public int VectorX { get; set; }
         public int VectorY { get; set; }
 
+        public override char ConsoleChar
+        {
+            get
+            {
+                return 'X';
+            }
+        }
         override public void Update()
         {
             if (X + VectorX >= WorldWidth || X + VectorX < 0)

@@ -8,6 +8,15 @@ namespace SpacePongEngine
 {
     public class MilFalcon: XWing
     {
+
+        public override char ConsoleChar
+        {
+            get
+            {
+                return 'M';
+            }
+        }
+
         private const int HYPERSPACEDISTANCE = 15;
         public override void Update()
         {

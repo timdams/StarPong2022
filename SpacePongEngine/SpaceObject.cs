@@ -4,6 +4,8 @@ namespace SpacePongEngine
 {
     abstract public class SpaceObject
     {
+        abstract public char ConsoleChar { get; }
+
         static protected Random rng = new Random();
 
         private int x = 0;

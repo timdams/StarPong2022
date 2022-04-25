@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using SpacePongEngine;
 
 
@@ -12,14 +13,30 @@ namespace StarPongConsole
             SpaceObject.WorldWidth = Console.WindowWidth;
 
             Console.CursorVisible = false;
-            MilFalcon xw = new MilFalcon();
 
-            while(true)
+            List<SpaceObject> allObjects = new List<SpaceObject>();
+
+            allObjects.Add(new XWing());
+            allObjects.Add(new MilFalcon());
+            allObjects.Add(new AWing());
+
+            allObjects.Add(new XWing(5, 5, 1, -1));
+            allObjects.Add(new XWing(5, 7, 1, -1));
+            allObjects.Add(new XWing(5, 9, 1, -1));
+
+
+            while (true)
             {
                 //update
-                xw.Update();
+                foreach (var so in allObjects)
+                {
+                    so.Update();
+                }
                 //draw
-                DrawObject(xw);
+                foreach (var so in allObjects)
+                {
+                    DrawObject(so);
+                }
                 System.Threading.Thread.Sleep(50);
                 Console.Clear();
             }
@@ -28,7 +45,9 @@ namespace StarPongConsole
         static void DrawObject(SpaceObject toDraw)
         {
             Console.SetCursorPosition(toDraw.X, toDraw.Y);
-            Console.Write("X");
+            Console.Write(toDraw.ConsoleChar);
+
+          
         }
     }
 }

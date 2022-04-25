@@ -8,6 +8,13 @@ namespace SpacePongEngine
 {
     public class AWing: XWing
     {
+        public override char ConsoleChar
+        {
+            get
+            {
+                return 'A';
+            }
+        }
         public override void Update()
         {
             base.Update();
