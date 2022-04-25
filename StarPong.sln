@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarPongConsole", "StarPongConsole\StarPongConsole.csproj", "{DC018B99-C7DD-45D2-9339-756B51210338}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpacePongEngine", "SpacePongEngine\SpacePongEngine.csproj", "{9E06B775-0E0C-4277-8A8B-EAA55EA22CA5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC018B99-C7DD-45D2-9339-756B51210338}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC018B99-C7DD-45D2-9339-756B51210338}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC018B99-C7DD-45D2-9339-756B51210338}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC018B99-C7DD-45D2-9339-756B51210338}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E06B775-0E0C-4277-8A8B-EAA55EA22CA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E06B775-0E0C-4277-8A8B-EAA55EA22CA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E06B775-0E0C-4277-8A8B-EAA55EA22CA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E06B775-0E0C-4277-8A8B-EAA55EA22CA5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CD284949-A176-42B6-87A0-C4EADFDAB100}
+	EndGlobalSection
+EndGlobal
