@@ -12,7 +12,7 @@ namespace StarPongConsole
             SpaceObject.WorldWidth = Console.WindowWidth;
 
             Console.CursorVisible = false;
-            AWing xw = new AWing();
+            MilFalcon xw = new MilFalcon();
 
             while(true)
             {
