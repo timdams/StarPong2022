@@ -15,7 +15,9 @@ namespace StarPongConsole
             Console.CursorVisible = false;
 
             List<SpaceObject> allObjects = new List<SpaceObject>();
-            allObjects.Add(new Hangar(10) { X = 5, Y = 5 });
+            allObjects.Add(new Cruiser());
+            allObjects.Add(new Cruiser());
+            allObjects.Add(new Cruiser());
             //allObjects.Add(new XWing());
             //allObjects.Add(new MilFalcon());
             //allObjects.Add(new AWing());
@@ -33,12 +35,12 @@ namespace StarPongConsole
                 {
                     so.Update();
 
-                    if (so is Hangar)
+                    if (so is Cruiser)
                     {
-                        if (rng.Next(0, 10) == 0)
+                        if (rng.Next(0, 100) == 0)
                         {
-                            Hangar temp = (Hangar)so;
-                            toAdd.AddRange(temp.Launch());
+                            Cruiser temp = (Cruiser)so;
+                            toAdd.AddRange(temp.EmptyHangars());
                         }
                     }
                 }
